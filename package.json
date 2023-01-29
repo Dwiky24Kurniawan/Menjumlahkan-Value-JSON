@@ -1,0 +1,22 @@
+{
+  "name": "menjumlahkan-value-json",
+  "version": "1.0.0",
+  "description": "Ini adalah kode program javascript untuk menjumlahkan quantity dari json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dwiky24Kurniawan/Menjumlahkan-Value-JSON.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dwiky24Kurniawan/Menjumlahkan-Value-JSON/issues"
+  },
+  "homepage": "https://github.com/Dwiky24Kurniawan/Menjumlahkan-Value-JSON#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
