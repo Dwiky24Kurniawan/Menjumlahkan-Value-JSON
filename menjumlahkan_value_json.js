@@ -33,13 +33,25 @@ var productBin = {
       }
     ],
     "message": "success"
-  }
+  } 
 
-/*var jumlahQty = productBin.data.map(qty => qty.quantity).reduce((acc, amount) => acc + amount);
-console.log("Jumlah seluruh quantity = " + jumlahQty)*/
+//Menggunakan .map dan .reduce
+/* var jumlahQty = productBin.data.map(qty => qty.quantity).reduce((Qty, jmlQty) => Qty + jmlQty);
+console.log("Jumlah seluruh quantity = " + jumlahQty) */
 
-var jumlahQty = productBin.data.reduce(function(_this, val) {
+//Menggunakan .reduce
+/* var jumlahQty = productBin.data.reduce(function(_this, val) {
   return _this + val.quantity
 }, 0);
+console.log("Jumlah seluruh quantity = " + jumlahQty) */
 
-console.log("Jumlah seluruh quantity = " + jumlahQty)
+//Menggunakan perulangan for
+let jumlahQty = 0
+function jumlahQuantity(responseData){
+  for (let i=0; i<responseData.data.length; i++){
+    let jmlQty = responseData.data[i].quantity
+    jumlahQty = jmlQty + jumlahQty
+  }
+  console.log("Jumlah seluruh quantity = " + jumlahQty)
+}
+jumlahQuantity(productBin)
